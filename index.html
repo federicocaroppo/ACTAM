@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/icon.png" type="image/png">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/product-sans');</style>
+    <title>The Sound of Space</title>
+    <script src="shepherd/shepherd.min.js"></script>
+    <link rel="stylesheet" href="shepherd/shepherd.css"/>
+</head>
+
+<body>
+    <!-- <div>
+        <canvas id="starfield"></canvas>
+    </div> -->
+
+    <div class="title block">
+        <h1 id="main-title">The Sound of Space</h1>
+        <h3 id="sec-title">ACTAM Project - Generative Music</h3>
+        <a href="#ambient-selection" class="btn">LET'S START</a>
+
+    </div>
+
+    
+    
+    <div id="ambient-selection">
+        <h1>Ambient Selection</h1>
+        <p> The selected image will affect the soundscape</p>
+        <div style="position: absolute; left: 90.5%; top: 10%;">
+            <a href="#top" class="style-btn">BACK</a>
+        </div>
+        <div style="position: absolute; left: 3%; top: 10%;">
+            <a id="guide" class="style-btn">GUIDE</a>
+        </div>
+
+    <div class="row">
+        <div id="1" class="col object1" onclick="flag(this.id)">
+            <img id="1" src="Images/env/1.jpg">
+            <div class="layer">
+                <!-- <h3>1</h3> -->
+            </div>
+        </div>
+        <div id="2" class="col" onclick="ambient(this.id)">
+            <img id="2" onclick="" src="Images/env/2.jpg">
+            <div class="layer">
+                <!-- <h3>2</h3> -->
+            </div>
+        </div>
+        <div id="3" class="col" onclick="ambient(this.id)">
+            <img id="3" onclick="" src="Images/env/3.jpg">
+            <div class="layer">
+                <!-- <h3>3</h3> -->
+            </div>
+        </div>
+        <div id="4" class="col" onclick="ambient(this.id)">
+            <img id="4" onclick="" src="Images/env/4.jpg">
+            <div class="layer">
+                <!-- <h3>1</h3> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="5" class="col" onclick="ambient(this.id)">
+            <img id="5" onclick="" src="Images/env/5.jpg">
+            <div class="layer">
+                <!-- <h3>2</h3> -->
+            </div>
+        </div>
+        <div id="6" class="col" onclick="ambient(this.id)">
+            <img id="6" onclick="" src="Images/env/6.jpg">
+            <div class="layer">
+                <!-- <h3>3</h3> -->
+            </div>
+        </div>
+        <div id="7" class="col" onclick="ambient(this.id)">
+            <img id="7" onclick="" src="Images/env/7.jpg">
+            <div class="layer">
+                <!-- <h3>1</h3> -->
+            </div>
+        </div>
+        <div id="8" class="col" onclick="ambient(this.id)">
+            <img id="8" onclick="" src="Images/env/8.jpg">
+            <div class="layer">
+                <!-- <h3>2</h3> -->
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="Libraries/P5/p5.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

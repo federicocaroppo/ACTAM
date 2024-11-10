@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/icon.png" type="image/png">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <style>@import url('https://fonts.cdnfonts.com/css/product-sans');</style>
+    <script src="shepherd/shepherd.min.js"></script>
+    <link rel="stylesheet" href="shepherd/shepherd.css"/>
+    <title>Soundscape</title>
+    
+</head>
+
+<body>
+    <div class="container">
+       <canvas id="imageBox"></canvas>         
+        <div id="param">
+            <h1>Soundscape</h1>
+            <div id="palette"></div>
+            <div id="param-big-container">
+                <div id="param-container"><h2>Detected key:</h2> <h2 id="key"></h2></div>
+                <div id="param-container"><h2>Detected mode:</h2> <h2 id="mode"></h2></div>
+                <div id="param-container"><h2>Detected progression:</h2> <h2 id="prog"></h2></div>
+                <div id="param-container"><h2>Detected chord type:</h2> <h2 id="tetrad"></h2></div>
+            </div>
+        </div>
+    </div>
+
+    <a onclick="window.location.href='3d.html'" id="ahead" class="style-btn">NEXT</a>
+    <a onclick="window.location.href='index.html#ambient-selection'" id="back" class="style-btn">BACK</a>
+
+    <script src="https://unpkg.com/fast-average-color/dist/index.browser.min.js"></script>
+    <script src="https://colorjs.io/dist/color.global.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="param.js"></script>
+    <script src="Libraries/P5/p5.js"></script>
+    <script src="Libraries/P5/p5.easycam.js"></script>
+</body>
+
+</html>
